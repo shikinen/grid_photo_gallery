@@ -10,11 +10,18 @@ $main-font: 'Open Sans', Helvetica, Arial, sans-serif;
 
 // MEDIA MIXINS
 
+$phone-width: 576px;
+$tablet-width: 768px;
 $desktop-width: 990px;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
 
 @mixin desktop {
 	@media (min-width: #{$desktop-width}) {
 		@content;
 	}
-
 }
