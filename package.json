@@ -1,0 +1,13 @@
+{
+  "name": "bookmarks",
+  "version": "1.0.0",
+  "description": "my development bookmarks",
+  "author": "Rafal Miodowski",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "pug": "^2.0.2"
+  }
+}
