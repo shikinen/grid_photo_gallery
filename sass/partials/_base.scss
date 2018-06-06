@@ -1,5 +1,5 @@
 html {
-	font-size: 18px;
+	font-size: 16px;
 	color: $main-color;
 	font-family: $main-font;
 
@@ -7,22 +7,48 @@ html {
 
 body {
 	background-color: $background-color;
+	margin: 2rem 3rem;
+}
+
+a {
+	color: currentColor;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	&:hover {
+		transform: translateY(-4px);
+	}
+
 }
 
 .header {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 2rem 3rem;
+	margin-bottom: 2rem;
+	>* {
+		margin-bottom: .5rem;
+	}
+	.email {
+		font-size: .8em;
+	}
+	@include desktop {
+		display: grid;
+		grid-gap: 1.5rem;
+		grid-template-columns: 285px auto auto;
+		>* {
+			margin-bottom: 0;
+			display: flex;
+			align-items: center;
+		}
+		.email {
+			text-align: right;
+			justify-content: flex-end;
+		}
+	}
 }
 
 .title {
 	font-size: 3rem;
+	font-weight: 600;
 	font-family: $accent-font;
-	margin-bottom: .5rem;
-	margin-right: 1.5rem;
+	color: $accent-color;
 }
 
-main {
-	margin: 0 3rem;
-}
+.box { background-color: $main-color; }
