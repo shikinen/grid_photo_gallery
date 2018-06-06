@@ -31,7 +31,7 @@ a {
 	@include desktop {
 		display: grid;
 		grid-gap: 1.5rem;
-		grid-template-columns: 285px auto auto;
+		grid-template-columns: 240px auto auto;
 		>* {
 			margin-bottom: 0;
 			display: flex;
@@ -46,9 +46,6 @@ a {
 
 .title {
 	font-size: 2.5rem;
-	@import desktop {
-		font-size: 3rem;
-	}
 	font-weight: 600;
 	font-family: $accent-font;
 	color: $accent-color;
