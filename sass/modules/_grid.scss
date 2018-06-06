@@ -5,3 +5,16 @@
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
 }
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
