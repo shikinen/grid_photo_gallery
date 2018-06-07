@@ -14,14 +14,20 @@ $phone-width: 576px;
 $tablet-width: 768px;
 $desktop-width: 990px;
 
+@mixin phone {
+	@media screen and (min-width: #{$phone-width}) and (orientation: landscape) {
+		@content;
+	}
+}
+
 @mixin tablet {
-	@media (min-width: #{$tablet-width}) {
+	@media screen and (min-width: #{$tablet-width}) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media (min-width: #{$desktop-width}) {
+	@media screen and (min-width: #{$desktop-width}) {
 		@content;
 	}
 }

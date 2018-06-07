@@ -3,26 +3,26 @@
     grid-gap: 5px;
     grid-template-columns: auto-fit;
     grid-auto-rows: 200px;
-    @include tablet {
+    @include phone {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-flow: dense;
     }
 }
 
 .horizontal {
-    @include tablet {
+    @include phone {
         grid-column: span 2;
     }
 }
 
 .vertical {
-    @include tablet {
+    @include phone {
         grid-row: span 2;
     }
 }
 
 .big {
-    @include tablet {
+    @include phone {
         grid-column: span 2;
         grid-row: span 2;
     }
