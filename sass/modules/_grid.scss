@@ -2,8 +2,9 @@
     display: grid;
     grid-gap: 5px;
     grid-template-columns: auto-fit;
-    grid-auto-rows: 200px;
+    grid-auto-rows: auto-fit;
     @include phone {
+    	grid-auto-rows: 200px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-flow: dense;
     }
