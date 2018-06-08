@@ -6,9 +6,10 @@ html {
 }
 
 body {
-	background-color: $background-color;
+	background: #22c1c3;
+    background: $background-gradient;
 	margin: 2rem 3rem;
-}
+}	
 
 a {
 	color: currentColor;
@@ -50,5 +51,3 @@ a {
 	font-family: $accent-font;
 	color: $accent-color;
 }
-
-.box { background-color: $main-color; }
